@@ -7,9 +7,9 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y nodejs \
     npm
 
-RUN sudo npm cache clean -f && \
-    sudo npm install -g n && \
-    sudo n stable
+RUN npm cache clean -f && \
+    npm install -g n && \
+    n stable
 
 RUN chmod +x entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
