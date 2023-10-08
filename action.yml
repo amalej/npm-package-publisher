@@ -1,0 +1,22 @@
+name: "Hello world"
+description: "Greet the world"
+inputs:
+  registry:
+    description: "NPM registry. Usually 'registry.npmjs.org'"
+    required: false
+    default: "registry.npmjs.org"
+  access-token:
+    description: "NPM access token for authenticating to npm"
+    required: true
+outputs:
+  time:
+    description: "The time greeeted"
+branding:
+  icon: "shield"
+  color: "blue"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.registry }}
+    - ${{ inputs.access-token }}
