@@ -1,5 +1,5 @@
-name: "Hello world"
-description: "Greet the world"
+name: "NPM Publisher"
+description: "A GitHub action for automating publishing NPM packages"
 inputs:
   registry:
     description: "NPM registry. Usually 'registry.npmjs.org'"
@@ -8,9 +8,6 @@ inputs:
   access-token:
     description: "NPM access token for authenticating to npm"
     required: true
-outputs:
-  time:
-    description: "The time greeeted"
 branding:
   icon: "shield"
   color: "blue"
