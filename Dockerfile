@@ -7,8 +7,7 @@ RUN apt update && apt upgrade -y && \
     apt install -y nodejs && \
     apt install -y npm
 
-RUN apt-get install wget && \
-    apt-get install curl
+RUN apt install -y curl
 
 RUN npm install npm@latest -g && \
     npm install n -g && \
