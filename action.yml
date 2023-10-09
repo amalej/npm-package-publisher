@@ -1,4 +1,4 @@
-name: "NPM Publisher"
+name: "NPM Package Publisher"
 description: "A GitHub action for automating publishing NPM packages"
 inputs:
   registry:

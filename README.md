@@ -1,4 +1,4 @@
-# NPM Publisher
+# NPM Package Publisher
 
 A GitHub action for automating publishing NPM packages.
 Supports deploying packages written in:
