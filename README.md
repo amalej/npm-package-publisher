@@ -35,7 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Publish
-        uses: amalej/npm-publisher@v1.0.1
+        uses: amalej/npm-package-publisher@v1.0.2
         with:
           access-token: ${{secrets.NPM_TOKEN}}
 ```
